@@ -6,7 +6,7 @@
   <link href="https://abozanona.me/atom.xml" rel="self"/>
   
   <link href="https://abozanona.me/"/>
-  <updated>2021-04-24T13:11:56.731Z</updated>
+  <updated>2021-09-09T13:49:46.497Z</updated>
   <id>https://abozanona.me/</id>
   
   <author>
@@ -17,13 +17,171 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Unstagram</title>
+    <link href="https://abozanona.me/unstagram/"/>
+    <id>https://abozanona.me/unstagram/</id>
+    <published>2021-05-28T20:23:23.000Z</published>
+    <updated>2021-09-09T13:49:46.497Z</updated>
+    
+    <content type="html"><![CDATA[<p>One of my friends on Instagram told me that he hates it so much when I read DM on Instagram and respond in a late time. That’s why I decided to build Unstagram! <span id="more"></span></p><p>Using Unstagram, you can read other’s messages on Instagram and they won’t know that. It works by blocking the seen request from been sent to instagram server.</p><p>You can give it a try by downloading the chrome extension on your browser from <a href="https://chrome.google.com/webstore/detail/unstagram-instagram-messe/mfoefahdnhpopjcdmkpkncedcamplcei">here</a>.</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;One of my friends on Instagram told me that he hates it so much when I read DM on Instagram and respond in a late time. That’s why I decided to build Unstagram!</summary>
+    
+    
+    
+    <category term="hack" scheme="https://abozanona.me/categories/hack/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Text To Speech</title>
+    <link href="https://abozanona.me/text-to-speech/"/>
+    <id>https://abozanona.me/text-to-speech/</id>
+    <published>2021-04-18T20:23:23.000Z</published>
+    <updated>2021-09-09T15:09:21.580Z</updated>
+    
+    <content type="html"><![CDATA[<p>My brother studies english translations. He had an online quiz where he should memorize around 200 english words and their meaning in Arabic.</p><p>His teacher will tell him three words in Arabic and he should tell him the meaning in English. And then he will give hin another three English words and my brother should give him the meaning in Arabic.</p><p>I wrote a python code with him to help him cheat in the quiz. :) </p><iframe height="250" src="https://www.youtube.com/embed/n-aDfbYzhl8"></iframe>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;My brother studies english translations. He had an online quiz where he should memorize around 200 english words and their meaning in Ara</summary>
+      
+    
+    
+    
+    <category term="hack" scheme="https://abozanona.me/categories/hack/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Automatic typing</title>
+    <link href="https://abozanona.me/auto-typing/"/>
+    <id>https://abozanona.me/auto-typing/</id>
+    <published>2020-12-01T21:23:23.000Z</published>
+    <updated>2021-09-09T13:49:52.338Z</updated>
+    
+    <content type="html"><![CDATA[<p>I forget a lot of things, and I’m a lazy person to save everything.</p><p>In my job, I’m required to enter a serial code everyting I neet to access a specific feature in the system. So instead of memorizing the serial code and write it down everyting I want to access that feature in the system, I have decided to write a small code that will do the job for me. <span id="more"></span></p><p>I wrote a <code>bat</code> script that will simulare keys pressing on keyboard and enter the serial number. The serial number is splitter into two parts, and it should be entered in two textpoxes, and that’s what I told the script to do for me.</p><p>I created a new file <code>auto.bat</code>, and added the following script inside it</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">if</span> (@CodeSection == @Batch) @then</span><br><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">set</span> SendKeys=CScript //nologo //E:JScript &quot;%~F0&quot;</span><br><span class="line"><span class="comment">rem start &quot;&quot; /B cmd</span></span><br><span class="line"><span class="built_in">ping</span> -n <span class="number">1</span> -w <span class="number">1</span> <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span> &gt; <span class="built_in">NUL</span></span><br><span class="line"><span class="variable">%SendKeys%</span> &quot;<span class="variable">%%&#123;</span>TAB&#125;&quot;</span><br><span class="line"><span class="built_in">ping</span> -n <span class="number">1</span> -w <span class="number">1</span> <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span> &gt; <span class="built_in">NUL</span></span><br><span class="line"><span class="variable">%SendKeys%</span> &quot;SERIAL-CODE-PART-ONE&#123;TAB&#125;&quot;</span><br><span class="line"><span class="built_in">ping</span> -n <span class="number">1</span> -w <span class="number">1</span> <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span> &gt; <span class="built_in">NUL</span></span><br><span class="line"><span class="variable">%SendKeys%</span> &quot;SERIAL-CODE-PART-TWO&#123;ENTER&#125;&quot;</span><br><span class="line"><span class="keyword">goto</span> :EOF</span><br><span class="line">@end</span><br><span class="line">// JScript section</span><br><span class="line">var WshShell = WScript.CreateObject(&quot;WScript.Shell&quot;);</span><br><span class="line">WshShell.SendKeys(WScript.Arguments(<span class="number">0</span>));</span><br></pre></td></tr></table></figure><p>After that I create a new shortcut for that file, by going to desktop, clicking on right mouse button, selecting Shortcut, and entering <code>auto.bat</code> full path.</p><p>Then I added a keybord shortcut <code>Ctrl + Shift + Alt + P</code> to run the script by right clicking on the shortcut file, going to Shortcut tap, and adding a shortcut key.</p><p>Now whenever I want to access the system, I press the magical buttons <code>Ctrl + Shift + Alt + P</code> to ask my computer to enter the serial code for me.</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;I forget a lot of things, and I’m a lazy person to save everything.&lt;/p&gt;
+&lt;p&gt;In my job, I’m required to enter a serial code everyting I neet to access a specific feature in the system. So instead of memorizing the serial code and write it down everyting I want to access that feature in the system, I have decided to write a small code that will do the job for me.</summary>
+    
+    
+    
+    <category term="hack" scheme="https://abozanona.me/categories/hack/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Darcom</title>
+    <link href="https://abozanona.me/darcom/"/>
+    <id>https://abozanona.me/darcom/</id>
+    <published>2020-03-09T21:23:23.000Z</published>
+    <updated>2021-09-09T14:18:41.580Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/projects/darcom/darcom-home.png"></p><p><a href="https://darcom.ps/">Darcom</a> is a project I worked on as a freelancer. It’s a commercial advertising guide app. <span id="more"></span></p><p>With darcom you can:</p><ul><li>browser stores and order products.</li><li>Collect point and get seasonal gifts.</li><li>Buy products from stores.</li><li>Share stories with your customers.</li><li>Send notifications to others.</li></ul><p>If you want to get new rewards every season, you can download Darcom from <a href="https://play.google.com/store/apps/details?id=com.darcom.darcom">Google Play</a> and <a href="https://apps.apple.com/us/app/darcom/id1537964524">App Store</a> now.</p><p>If you are running a store and want an advertisement platform, you can download Darcom Business from <a href="https://play.google.com/store/apps/details?id=com.darcom.business">Google Play</a> and <a href="https://apps.apple.com/us/app/darcom-business/id1540459395">App Store</a>.</p><p>Darcom was developed with Flutter and NodeJS.</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/projects/darcom/darcom-home.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://darcom.ps/&quot;&gt;Darcom&lt;/a&gt; is a project I worked on as a freelancer. It’s a commercial advertising guide app.</summary>
+    
+    
+    
+    <category term="project" scheme="https://abozanona.me/categories/project/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Videos streaming application</title>
+    <link href="https://abozanona.me/videos-streaming-application/"/>
+    <id>https://abozanona.me/videos-streaming-application/</id>
+    <published>2019-08-17T20:23:23.000Z</published>
+    <updated>2021-09-09T15:37:04.015Z</updated>
+    
+    <content type="html"><![CDATA[<p>I worked on developing flutter Android and IOS application for fetching and displaying videos from streaming websites through REST API <span id="more"></span></p><p>I used the Bloc State Management Library in the application development.</p><p>There’s no direct way to fetch Video streams from free video streaming websites, so I used multiple packages to parse pages html tags and execute JS scripts to be able to get videos steram links.</p><p>The application does the following.</p><ul><li>View videoes from streaming websites.</li><li>Search videos by name and category.</li><li>Create playlists for videoes.</li><li>Create a new account on the application. Add videoes to persomal lists.</li><li>View videos auther profiles.</li><li>Search for similar videos.</li></ul>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;I worked on developing flutter Android and IOS application for fetching and displaying videos from streaming websites through REST API</summary>
+    
+    
+    
+    <category term="project" scheme="https://abozanona.me/categories/project/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Nitro</title>
+    <link href="https://abozanona.me/nitro/"/>
+    <id>https://abozanona.me/nitro/</id>
+    <published>2019-06-13T20:23:23.000Z</published>
+    <updated>2021-09-09T13:49:57.823Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Android-application"><a href="#Android-application" class="headerlink" title="Android application"></a>Android application</h1><p><a href="https://nitro.co.com/">Nitro</a> is an android application for advertising. The application is for Nitro company for media and advertisement. The application is downloaded on taplets that are setupped in the city taxis. The app loads advertises from a server and displayes them to people in the taxi. Ads are only shown to users when they are in a specific range with the advertiser store. <span id="more"></span></p><p>The aplication also creates a hotsopt that all people in the taxi can connect to. The hutspot allows users to server limited websites and applications.</p><p>The application was developed using native android SDK.</p><p>One of the challenging features that was built in this application was preventing users from interacting with the application and taplet in all possible ways. Here are some of the ways I did that.</p><ul><li>Disabled interacting with hardware buttons.</li><li>Prevented the interaction with the screen.</li><li>Designed the application as a Launcher Application.</li><li>Removed lock screen.</li><li>Registered the application to the Accessibility Service to listen to and prevent all possible interactions with the device.</li><li>Ran a VPN on the taplet to limit web pages users can access.</li></ul><h1 id="Admin-panel"><a href="#Admin-panel" class="headerlink" title="Admin panel"></a>Admin panel</h1><p>There’s also an admin panel where admins can manage advertisers subscriptions and controll displayed ads.</p><p>I user NodeJs to build the REST API and Angular to build the admin panel.</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Android-application&quot;&gt;&lt;a href=&quot;#Android-application&quot; class=&quot;headerlink&quot; title=&quot;Android application&quot;&gt;&lt;/a&gt;Android application&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://nitro.co.com/&quot;&gt;Nitro&lt;/a&gt; is an android application for advertising. The application is for Nitro company for media and advertisement. The application is downloaded on taplets that are setupped in the city taxis. The app loads advertises from a server and displayes them to people in the taxi. Ads are only shown to users when they are in a specific range with the advertiser store.</summary>
+    
+    
+    
+    <category term="project" scheme="https://abozanona.me/categories/project/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Tmasraf</title>
+    <link href="https://abozanona.me/tmasraf/"/>
+    <id>https://abozanona.me/tmasraf/</id>
+    <published>2018-12-07T21:23:23.000Z</published>
+    <updated>2021-09-09T13:57:17.398Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/projects/tmasraf/tmasraf-splash-screen.png"></p><p>Tmasraf is one of the project I worked on as a freelancer. It’s a cashback mobile app where customers get points from shopping. <span id="more"></span></p><p>In Tmasraf, I developed 2 mobile applications(one for customers and one for merchants), and a control panel for admins.</p><p>Tmasraf was developed using NodeJS[Express] and NativeScript.</p><blockquote><p>The first version of the mobile application wsa developed using Xamarin.Forms, but I switched to NativeScript to improve application performance.</p></blockquote><h2 id="Tmasraf-admin-panel"><a href="#Tmasraf-admin-panel" class="headerlink" title="Tmasraf admin panel."></a>Tmasraf admin panel.</h2><p>The admin panel gives admins access to website statistics and allows them to manage merchants subscriptions.</p><h2 id="Tmasraf-customers-application"><a href="#Tmasraf-customers-application" class="headerlink" title="Tmasraf customers application."></a>Tmasraf customers application.</h2><p>Users can create a new account in Tmasraf customers application to access it’s features. Once users create an account they can start collecting points.</p><p><img src="/images/projects/tmasraf/tmasraf-user-profile.png"></p><p>Every new user gets a unique QR code that can be used in earning points.</p><p><img src="/images/projects/tmasraf/tmasraf-user-home.png"></p><p>Users can see a list of all subscribed stores in the application and explore their location and products.</p><p><img src="/images/projects/tmasraf/tmasraf-user-menu.png"></p><p><img src="/images/projects/tmasraf/tmasraf-user-stores.png"></p><p>Customers can earn point from buying products from the subscriped stores by allowing the stores to scan their QR code from the merchant application. I implemented a secure method to transfer points between customers and merchants using QR code scanning.</p><p><img src="/images/projects/tmasraf/tmasraf-user-points.png"></p><p><img src="/images/projects/tmasraf/tmasraf-savings.png"></p><h2 id="Tmasraf-merchants-application"><a href="#Tmasraf-merchants-application" class="headerlink" title="Tmasraf merchants application."></a>Tmasraf merchants application.</h2><p>Merchants application is used by stores to add points to customers. When a customer buys a product from a merchant, the merchant scans the customers QR code and sends him cashback points that he can use in buying products in the future.</p><p><img src="/images/projects/tmasraf/tmasraf-store-scan-code.png"></p><p><img src="/images/projects/tmasraf/tmasraf-store-sell.png"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;/images/projects/tmasraf/tmasraf-splash-screen.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Tmasraf is one of the project I worked on as a freelancer. It’s a cashback mobile app where customers get points from shopping.</summary>
+    
+    
+    
+    <category term="project" scheme="https://abozanona.me/categories/project/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>College freelancing projects</title>
+    <link href="https://abozanona.me/optimum/"/>
+    <id>https://abozanona.me/optimum/</id>
+    <published>2018-02-20T21:23:23.000Z</published>
+    <updated>2021-09-09T11:33:33.280Z</updated>
+    
+    <content type="html"><![CDATA[<p>When I was at my last year in collage, I was introduced to <a href="https://www.paloptimum.ps/">Optimum</a>; a marketing agency located at Hebron. I contracted with them as a freelancer and worked on developing websites for companies and individuals they work with in the media production. <span id="more"></span></p><h2 id="Al-Wafa-Plastic-Industries"><a href="#Al-Wafa-Plastic-Industries" class="headerlink" title="Al-Wafa Plastic Industries"></a>Al-Wafa Plastic Industries</h2><p><img src="/images/projects/wpi/wpi-home.jpg"></p><p>I developed <a href="https://wpi.ps/">WPI</a> website for Al-Wafa company to post their news and display their products catagols to their customers.</p><p><img src="/images/projects/wpi/wpi-catalog.png"></p><p>Customers can also use a custom 3D wizard to design to desgin bottles and order them.</p><p><img src="/images/projects/wpi/wpi-wizard-1.jpg"></p><p>In the 3d wizard, customers can pick the product, it’s cap and color.</p><p><img src="/images/projects/wpi/wpi-wizard-2.jpg"></p><p>A custom wordpress theme was developed for WPI website.</p><h2 id="Viviane"><a href="#Viviane" class="headerlink" title="Viviane"></a>Viviane</h2><p><img src="/images/projects/viviane/viviane-home.jpg"></p><p><a href="https://juneidi-ps.com/">Viviane</a> website was developed for Al-juneidi for water bottles. The website purpose is to post the latest company events and the company products.</p><p>A custom wordpress theme was also developed for Viviane website.</p><p>Viviane website has a <a href="https://juneidi-ps.com/game/">hidden link</a> to play the Viviane puzzle game.</p><p><img src="/images/projects/viviane/viviane-game-1.jpg"></p><p>The game was developed using Unity3D and was uploaded to Viviane website and Facebook Gaming Platform</p><p><img src="/images/projects/viviane/viviane-game-2.jpg"></p><h2 id="Rahhal"><a href="#Rahhal" class="headerlink" title="Rahhal"></a>Rahhal</h2><p><img src="/images/projects/rahhal/rahhal-home.jpg"></p><p><strong>Rahhal</strong> was developed for a travelling man to post about his trips. The website was developed using MEAN stack technologies. I used express, gulp &amp; mongoose in website developemnt.</p><p><img src="/images/projects/rahhal/rahhal-visited-countries.png"></p><p>The admin can use the admin panel to create new gallaries for his trips</p><p><img src="/images/projects/rahhal/rahhal-gallery.jpg"></p><p>The admin can also write blogs about his trips in a continent or a country.</p><p><img src="/images/projects/rahhal/rahhal-continent.jpg"></p><p><img src="/images/projects/rahhal/rahhal-blog.jpg"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;When I was at my last year in collage, I was introduced to &lt;a href=&quot;https://www.paloptimum.ps/&quot;&gt;Optimum&lt;/a&gt;; a marketing agency located at Hebron. I contracted with them as a freelancer and worked on developing websites for companies and individuals they work with in the media production.</summary>
+    
+    
+    
+    <category term="project" scheme="https://abozanona.me/categories/project/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>About abozanona</title>
     <link href="https://abozanona.me/about/"/>
     <id>https://abozanona.me/about/</id>
-    <published>2021-03-31T22:00:00.000Z</published>
-    <updated>2021-04-24T13:11:56.731Z</updated>
+    <published>1995-09-11T23:00:00.000Z</published>
+    <updated>2021-09-09T15:44:09.889Z</updated>
     
-    <content type="html"><![CDATA[<p>Hi, I’m Abozanona, quiet person, listens to classic music, likes old songs and addicted to Dota2.</p><h2 id="Components"><a href="#Components" class="headerlink" title="Components"></a>Components</h2><table><thead><tr><th>element</th><th>feature</th></tr></thead><tbody><tr><td>My Statement</td><td>Wind, love, code &amp; everything in between!</td></tr><tr><td>Statement I Like</td><td>Le vent se lève! … il faut tenter de vivre!</td></tr><tr><td>Birthday</td><td>12th September 1995</td></tr><tr><td>Characteristics</td><td>Busy, Slow to respond, Bad in memorization, Offline, Not using social websites</td></tr><tr><td>Career</td><td>Struts2 &amp; FullStack developer</td></tr><tr><td>Favorite Anime</td><td>Attack on Titan, duh (￣▽￣)</td></tr><tr><td>Favorite Game</td><td>Dota2</td></tr><tr><td>Favorite Food</td><td>I eat everything ♨</td></tr></tbody></table><h2 id="Programming-contests-amp-Participations"><a href="#Programming-contests-amp-Participations" class="headerlink" title="Programming contests &amp; Participations"></a>Programming contests &amp; Participations</h2><ul><li>2nd place in the  Schools Programming Olympic contest 2011 - Palestine.</li><li>Participant in ACM-PCPC contest for the years 2014, 2015, 2016, 2017.</li><li>1st place in ACM-PCPC contest 2017.</li><li>Coach of the 3rd place team in ACM-PCPC contest 2017.</li><li>Participated in ACM-Arab Collegiate Programming Contest 2017.</li><li>Participated in Google Code Jam 2017, 2018.</li><li>1st place in PPU programming contest 2017.</li><li>1st place in Hebron code jam 2017.</li><li>3rd place in Hebron code jam 2018.</li><li>Participated in Global Game jam for years 2016, 2017.</li><li>Participated in Game Jam Palestine Zanga for years 2014, 2016, 2017, 2019.</li><li>3rd place in Game Jam Palestine Zanga contest 2014.</li><li>4th place in Game Jam Palestine Zanga contest 2016.</li><li>Coordinator of Game Jam Palestine Zanga 2019.</li><li>Participated in Google HashCode 2018, 2020</li><li>Scored 3rd rank in Palestine, (1180 place overall) in Google HashCode 2020.</li></ul><h2 id="Things-I-worked-on"><a href="#Things-I-worked-on" class="headerlink" title="Things I worked on"></a>Things I worked on</h2><ul><li>Will add them later.<!-- <div class="work">  <div class="work-title">RSSHub <a href="https://docs.rsshub.app/"><i class="fas fa-link"></i></a><a href="https://github.com/DIYgod/RSSHub"><i class="fab fa-github"></i></a></div>  <div class="work-desc">万物皆可 RSS<img src="https://img.shields.io/github/stars/DIYgod/RSSHub?style=social&color=4c1"></div></div><div class="work">  <div class="work-title">RSSHub Radar <a href="https://github.com/DIYgod/RSSHub-Radar"><i class="fab fa-github"></i></a></div>  <div class="work-desc">一个可以帮助你快速发现和订阅当前网站 RSS 和 RSSHub 的浏览器扩展<img src="https://img.shields.io/github/stars/DIYgod/RSSHub-Radar?style=social&color=4c1"><img src="https://img.shields.io/chrome-web-store/users/kefjpfngnndepjbopdmoebkipbgkggaa.svg?style=social"></div></div><div class="work">  <div class="work-title">DPlayer <a href="https://dplayer.js.org/"><i class="fas fa-link"></i></a><a href="https://github.com/MoePlayer/DPlayer"><i class="fab fa-github"></i></a></div>  <div class="work-desc">一个可爱的 HTML5 弹幕视频播放器<img src="https://img.shields.io/github/stars/MoePlayer/DPlayer?style=social&color=4c1"></div></div><div class="work">  <div class="work-title">APlayer <a href="https://aplayer.js.org/"><i class="fas fa-link"></i></a><a href="https://github.com/MoePlayer/APlayer"><i class="fab fa-github"></i></a></div>  <div class="work-desc">一个好看的 HTML5 音乐播放器<img src="https://img.shields.io/github/stars/MoePlayer/APlayer?style=social&color=4c1"></div></div> --></li></ul><h2 id="Find-me"><a href="#Find-me" class="headerlink" title="Find me"></a>Find me</h2><p>🍭Contact &amp; Sponsorship：</p><ul><li><a href="mailto:abozanona@gmail.com?subject=That%20Astonishing%20Movie...&body=Hi%20Abozanona%2C%0D%0A%0D%0AI%20have%20found%20a%20movie%20%26%20I'm%20sure%20you'll%20love%20it!%0D%0AMaybe%20we%20should%20watch%20it%20together%3F%0D%0ALet%20me%20know%20when%20you're%20free!%0D%0A%0D%0AYagami%20Light.">Email me?</a></li><li><a href="mailto:abozanona@gmail.com?subject=That%20Astonishing%20Movie...&body=Hi%20Abozanona%2C%0D%0A%0D%0AI%20have%20found%20a%20movie%20%26%20I'm%20sure%20you'll%20love%20it!%0D%0AMaybe%20we%20should%20watch%20it%20together%3F%0D%0ALet%20me%20know%20when%20you're%20free!%0D%0A%0D%0AYagami%20Light.">Have an idea?</a></li><li><a href="https://www.buymeacoffee.com/abozanon">Buy me a coffee?</a></li><li>Direct messaging? ¯\<em>(ツ)</em>/¯</li></ul><style>.post-body thead {    display: none;}td:first-child {    width: 130px;    font-weight: bold;    color: #ff9800;}h2 {    color: #fc6423;}.work {    margin-bottom: 25px;}.work-title {    font-size: 17px;    font-weight: bold;}.work-title a {    margin-left: 5px;    font-size: 14px;    color: #777;}.work-desc {    color: #777;}.work-desc img:first-child {    display: inline;    vertical-align: top;    margin-left: 10px !important;}.post-body img {    display: inline;    vertical-align: top;}.post-body li a {    margin-right: 10px;}</style>]]></content>
+    <content type="html"><![CDATA[<p>Hi, I’m Abozanona, quiet person, listens to classic music, likes old songs and addicted to Dota2.</p><h2 id="Components"><a href="#Components" class="headerlink" title="Components"></a>Components</h2><table><thead><tr><th>element</th><th>feature</th></tr></thead><tbody><tr><td>My Statement</td><td>Wind, love, code &amp; everything in between!</td></tr><tr><td>Statement I Like</td><td>Le vent se lève! … il faut tenter de vivre!</td></tr><tr><td>Birthday</td><td>12th September 1995</td></tr><tr><td>Characteristics</td><td>Busy, Slow to respond, Bad in memorization, Offline, Not using social websites</td></tr><tr><td>Career</td><td>Struts2 &amp; FullStack developer</td></tr><tr><td>Favorite Anime</td><td>Attack on Titan, duh (￣▽￣)</td></tr><tr><td>Favorite Game</td><td>Dota2</td></tr><tr><td>Favorite Food</td><td>I eat everything ♨</td></tr></tbody></table><h2 id="Programming-contests-amp-Participations"><a href="#Programming-contests-amp-Participations" class="headerlink" title="Programming contests &amp; Participations"></a>Programming contests &amp; Participations</h2><ul><li>2nd place in the  Schools Programming Olympic contest 2011 - Palestine.</li><li>Participant in ACM-PCPC contest for the years 2014, 2015, 2016, 2017.</li><li>1st place in ACM-PCPC contest 2017.</li><li>Coach of the 3rd place team in ACM-PCPC contest 2017.</li><li>Participated in ACM-Arab Collegiate Programming Contest 2017.</li><li>Participated in Google Code Jam 2017, 2018.</li><li>1st place in PPU programming contest 2017.</li><li>1st place in Hebron code jam 2017.</li><li>3rd place in Hebron code jam 2018.</li><li>Participated in Global Game jam for years 2016, 2017.</li><li>Participated in Game Jam Palestine Zanga for years 2014, 2016, 2017, 2019.</li><li>3rd place in Game Jam Palestine Zanga contest 2014.</li><li>4th place in Game Jam Palestine Zanga contest 2016.</li><li>Coordinator of Game Jam Palestine Zanga 2019.</li><li>Participated in Google HashCode 2018, 2020</li><li>Scored 3rd rank in Palestine, (1180 place overall) in Google HashCode 2020.</li></ul><h2 id="Things-I-worked-on"><a href="#Things-I-worked-on" class="headerlink" title="Things I worked on"></a>Things I worked on</h2><ul><li>Will add them later.<div class="work">  <div class="work-title">      Unstagram      <a href="https://chrome.google.com/webstore/detail/unstagram-instagram-messe/mfoefahdnhpopjcdmkpkncedcamplcei"><i class="fas fa-link"></i></a>      <a href="https://github.com/abozanona/Unstagram"><i class="fab fa-github"></i></a>  </div>  <div class="work-desc">Using Unstagram, you can read other’s messages on Instagram and they won’t know that.</div></div><div class="work">  <div class="work-title">      Darcom      <a href="https://darcom.ps/"><i class="fas fa-link"></i></a>  </div>  <div class="work-desc">Darcom is a commercial advertising guide app.</div></div><div class="work">  <div class="work-title">      Nitro      <a href="https://nitro.co.com/"><i class="fas fa-link"></i></a>  </div>  <div class="work-desc">Nitro is an android application for advertising in taxis.</div></div><div class="work">  <div class="work-title">      Tmasraf      <a href="https://nitro.co.com/"><i class="fas fa-link"></i></a>  </div>  <div class="work-desc">Tmasraf is a cashback mobile app where customers get points from shopping.</div></div></li></ul><h2 id="Find-me"><a href="#Find-me" class="headerlink" title="Find me"></a>Find me</h2><p>🍭Contact &amp; Sponsorship：</p><ul><li><a href="mailto:abozanona@gmail.com?subject=That%20Astonishing%20Movie...&body=Hi%20Abozanona%2C%0D%0A%0D%0AI%20have%20found%20a%20movie%20%26%20I'm%20sure%20you'll%20love%20it!%0D%0AMaybe%20we%20should%20watch%20it%20together%3F%0D%0ALet%20me%20know%20when%20you're%20free!%0D%0A%0D%0AYagami%20Light.">Email me?</a></li><li><a href="mailto:abozanona@gmail.com?subject=That%20Astonishing%20Movie...&body=Hi%20Abozanona%2C%0D%0A%0D%0AI%20have%20found%20a%20movie%20%26%20I'm%20sure%20you'll%20love%20it!%0D%0AMaybe%20we%20should%20watch%20it%20together%3F%0D%0ALet%20me%20know%20when%20you're%20free!%0D%0A%0D%0AYagami%20Light.">Have an idea?</a></li><li><a href="https://www.buymeacoffee.com/abozanon">Buy me a coffee?</a></li><li>Direct messaging? ¯\<em>(ツ)</em>/¯</li></ul><style>.post-body thead {    display: none;}td:first-child {    width: 130px;    font-weight: bold;    color: #ff9800;}h2 {    color: #fc6423;}.work {    margin-bottom: 25px;}.work-title {    font-size: 17px;    font-weight: bold;}.work-title a {    margin-left: 5px;    font-size: 14px;    color: #777;}.work-desc {    color: #777;}.work-desc img:first-child {    display: inline;    vertical-align: top;    margin-left: 10px !important;}.post-body img {    display: inline;    vertical-align: top;}.post-body li a {    margin-right: 10px;}</style>]]></content>
     
     
       
