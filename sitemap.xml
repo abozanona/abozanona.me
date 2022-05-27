@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://abozanona.me/luca/</loc>
+    
+    <lastmod>2022-05-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://abozanona.me/about/</loc>
+    
+    <lastmod>2021-10-22</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://abozanona.me/darcom/</loc>
     
     <lastmod>2021-10-19</lastmod>
@@ -51,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://abozanona.me/about/</loc>
-    
-    <lastmod>2021-10-04</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://abozanona.me/videos-streaming-application/</loc>
     
     <lastmod>2021-09-22</lastmod>
@@ -88,7 +95,7 @@
 
   <url>
     <loc>https://abozanona.me/</loc>
-    <lastmod>2021-10-19</lastmod>
+    <lastmod>2022-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -97,22 +104,22 @@
 
   
   <url>
-    <loc>https://abozanona.me/categories/project/</loc>
-    <lastmod>2021-10-19</lastmod>
+    <loc>https://abozanona.me/categories/hack/</loc>
+    <lastmod>2022-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://abozanona.me/categories/hack/</loc>
-    <lastmod>2021-10-19</lastmod>
+    <loc>https://abozanona.me/categories/project/</loc>
+    <lastmod>2022-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://abozanona.me/categories/diary/</loc>
-    <lastmod>2021-10-19</lastmod>
+    <lastmod>2022-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
