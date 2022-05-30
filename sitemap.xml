@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://abozanona.me/my-cat/</loc>
+    <loc>https://abozanona.me/github-pull-requests/</loc>
     
-    <lastmod>2022-05-29</lastmod>
+    <lastmod>2022-05-30</lastmod>
     
   </url>
   
   <url>
-    <loc>https://abozanona.me/github-pull-requests/</loc>
+    <loc>https://abozanona.me/my-cat/</loc>
     
-    <lastmod>2022-05-29</lastmod>
+    <lastmod>2022-05-30</lastmod>
     
   </url>
   
   <url>
     <loc>https://abozanona.me/optimum/</loc>
     
-    <lastmod>2022-05-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://abozanona.me/darcom/</loc>
-    
-    <lastmod>2022-05-29</lastmod>
+    <lastmod>2022-05-30</lastmod>
     
   </url>
   
   <url>
     <loc>https://abozanona.me/tmasraf/</loc>
     
-    <lastmod>2022-05-29</lastmod>
+    <lastmod>2022-05-30</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://abozanona.me/darcom/</loc>
+    
+    <lastmod>2022-05-30</lastmod>
     
   </url>
   
@@ -95,7 +95,7 @@
 
   <url>
     <loc>https://abozanona.me/</loc>
-    <lastmod>2022-05-29</lastmod>
+    <lastmod>2022-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -104,22 +104,22 @@
 
   
   <url>
-    <loc>https://abozanona.me/categories/hack/</loc>
-    <lastmod>2022-05-29</lastmod>
+    <loc>https://abozanona.me/categories/project/</loc>
+    <lastmod>2022-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://abozanona.me/categories/project/</loc>
-    <lastmod>2022-05-29</lastmod>
+    <loc>https://abozanona.me/categories/hack/</loc>
+    <lastmod>2022-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://abozanona.me/categories/diary/</loc>
-    <lastmod>2022-05-29</lastmod>
+    <lastmod>2022-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
