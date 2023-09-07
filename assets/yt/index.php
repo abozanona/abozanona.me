@@ -1,27 +1,23 @@
 <?php
 $id = $_GET['id'];
 
-$ch = curl_init();
+$opts = [
+    "http" => [
+        "method" => "GET",
+        "header" => "Content-Type: application/x-www-form-urlencoded; charset=UTF-8\r\n" .
+            "Referer: https://en1.y2mate.is/\r\n"
+    ]
+];
+$context = stream_context_create($opts);
 
-$url = curl_escape($ch, "https://www.youtube.com/watch?v=$id");
-
-curl_setopt($ch, CURLOPT_URL, "https://154.82.111.112.sslip.io/newp");
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt(
-    $ch,
-    CURLOPT_POSTFIELDS,
-    "c=PS&u=$url"
-);
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded'));
-
-
-// receive server response ...
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-$res = curl_exec($ch);
-
-curl_close($ch);
+$res = file_get_contents("https://srvcdn15.2convert.me/api/json?url=https://www.youtube.com/watch?v=$id", false, $context);
 $res = json_decode($res);
-// further processing ....
-// echo stream_get_contents(fopen('http://example.com/', "rb"));
-header('location:' . "https://154.82.111.112.sslip.io" . $res->data->mp3);
+$videos = $res->formats->video;
+foreach($videos as $video) {
+    if(!$video->needConvert) {
+        header('location:' . $video->url);
+        die('');
+    }
+}
+$url = $res->formats->video[0]->url;
+header('location:' . $url);
