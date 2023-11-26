@@ -116,7 +116,7 @@
 
   <url>
     <loc>https://abozanona.me/</loc>
-    <lastmod>2023-09-17</lastmod>
+    <lastmod>2023-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -125,29 +125,29 @@
 
   
   <url>
-    <loc>https://abozanona.me/categories/hack/</loc>
-    <lastmod>2023-09-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://abozanona.me/categories/diary/</loc>
-    <lastmod>2023-09-17</lastmod>
+    <lastmod>2023-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://abozanona.me/categories/project/</loc>
-    <lastmod>2023-09-17</lastmod>
+    <lastmod>2023-11-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://abozanona.me/categories/hack/</loc>
+    <lastmod>2023-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://abozanona.me/categories/technical/</loc>
-    <lastmod>2023-09-17</lastmod>
+    <lastmod>2023-11-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
