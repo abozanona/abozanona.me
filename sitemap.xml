@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://abozanona.me/de-uglify-js-uglified-code/</loc>
+    
+    <lastmod>2024-05-19</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://abozanona.me/working-on-petmety/</loc>
+    
+    <lastmod>2024-05-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://abozanona.me/about/</loc>
+    
+    <lastmod>2024-05-01</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://abozanona.me/vacation-in-palestine-2024/</loc>
+    
+    <lastmod>2024-04-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://abozanona.me/integrating-spine-with-pixi-js/</loc>
     
-    <lastmod>2024-03-24</lastmod>
+    <lastmod>2024-04-14</lastmod>
     
   </url>
   
@@ -40,13 +68,6 @@
     <loc>https://abozanona.me/freiheit-com/</loc>
     
     <lastmod>2023-09-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://abozanona.me/about/</loc>
-    
-    <lastmod>2023-09-06</lastmod>
     
   </url>
   
@@ -137,7 +158,7 @@
 
   <url>
     <loc>https://abozanona.me/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -147,28 +168,28 @@
   
   <url>
     <loc>https://abozanona.me/categories/hack/</loc>
-    <lastmod>2024-04-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://abozanona.me/categories/project/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://abozanona.me/categories/diary/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-05-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://abozanona.me/categories/project/</loc>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://abozanona.me/categories/technical/</loc>
-    <lastmod>2024-04-12</lastmod>
+    <lastmod>2024-05-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
